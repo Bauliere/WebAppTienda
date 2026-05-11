@@ -1,0 +1,164 @@
+html:not(.default):not(.pink):not(.dark):not(.red):not(.purple) {
+    visibility: hidden;
+}
+
+/* Show when any palette class is applied */
+html.default, html.pink, html.dark, html.red, html.purple {
+    visibility: visible;
+}
+
+/* Main colour palette */
+:root {
+    --bg-color: #f0f0f0;
+
+    --title-bg-color: #fff;
+    --title-bg-color-hover: rgba(11, 11, 190, 0.1);
+    --title-color: rgb(11, 11, 190);
+
+    --search-text: rgba(11, 11, 190, 1);
+    --search-placeholder: rgba(11, 11, 190, 0.450);
+    --search-bg-color: #ffffff;
+    --search-border: 1px solid rgba(11, 11, 190, 0.450);
+    --search-border-focus: 2px solid rgb(11, 11, 190);
+    --search-background-hover: rgba(100, 100, 255, 0.1);
+
+    --dropdown-bg-color: rgb(255, 255, 255);
+    --dropdown-bg-color-focus: rgba(11, 11, 190, 0.450);
+
+    --drop-option-border: linear-gradient(90deg, transparent 0%,
+            rgba(11, 11, 190, 0.2) 20%,
+            rgba(11, 11, 190, 0.4) 50%,
+            rgba(11, 11, 190, 0.2) 80%,
+            transparent 100%);
+    --drop-option-text: black;
+    --drop-option-bg: white;
+
+    --product-cards-bg-color: #ffffff;
+    --product-cards-title: rgb(11, 11, 190);
+    --product-cards-price: rgb(0, 0, 0);
+
+    --shadow: rgba(11, 11, 190, 0.2);
+
+    --infocard-bgcolor: linear-gradient(130deg, rgba(16, 16, 122, 1) 25%, rgba(10, 10, 75, 1) 65%, rgba(0, 0, 10, 1) 100%);
+    --infocard-text: white;
+
+    --floating-button-bgcolor: linear-gradient(134deg, rgb(166, 166, 233) 25%, rgb(199, 199, 238) 100%);
+    --floating-button-bgcolor-hover: linear-gradient(134deg, rgb(137, 137, 232) 25%, rgb(174, 174, 236) 100%);
+    --floating-button-border: 1px solid rgba(11, 11, 190, 0.450);
+    --floating-button-icon: rgb(11, 11, 190);
+    --floating-button-icon-bgcolor: linear-gradient(134deg, rgba(255, 255, 255, 1) 25%, rgb(225, 225, 244) 100%);
+
+    --sidebar-bg: #fff;
+    --sidebar-title: rgb(11, 11, 190);
+    --sidebar-subs: rgb(80, 80, 175);
+    --sidebar-subs-hover: rgb(31, 31, 244);
+}
+
+/* Pink colour palette */
+.pink {
+    --bg-color: #eee0e8;
+
+    --title-bg-color: #ffcff1;
+    --title-bg-color-hover: rgba(255, 207, 241, 0.1);
+    --title-color: rgb(120, 33, 92);
+
+    --search-text: rgb(100, 35, 120);
+    --search-placeholder: rgba(100, 35, 120, 0.3);
+    --search-bg-color: #ffffff;
+    --search-border: 1px solid rgba(185, 11, 190, 0.45);
+    --search-border-focus: 2px solid rgb(185, 11, 190);
+    --search-background-hover: rgba(255, 100, 245, 0.1);
+
+    --dropdown-bg-color: #ffcff1;
+    --dropdown-bg-color-focus: rgba(243, 132, 204, 0.45);
+
+    --drop-option-border: linear-gradient(90deg, transparent 0%,
+            rgba(190, 11, 181, 0.2) 20%,
+            rgba(190, 11, 181, 0.4) 50%,
+            rgba(190, 11, 181, 0.2) 80%,
+            transparent 100%);
+    --drop-option-text: rgb(100, 35, 120);
+    --drop-option-bg: white;
+
+    --product-cards-bg-color: #ffcff1;
+    --product-cards-title: rgb(100, 35, 120);
+    --product-cards-price: rgb(126, 45, 150);
+
+    --shadow: rgba(190, 11, 109, 0.2);
+
+    --infocard-bgcolor: linear-gradient(130deg, rgb(255, 255, 255) 25%, rgb(236, 181, 218) 65%, rgb(234, 128, 185) 100%);
+    --infocard-text: rgb(100, 35, 120);
+
+    --floating-button-bgcolor: linear-gradient(134deg, rgb(233, 166, 213) 25%, rgb(238, 199, 228) 100%);
+    --floating-button-bgcolor-hover: linear-gradient(134deg, rgb(232, 137, 181) 25%, rgb(236, 174, 201) 100%);
+    --floating-button-border: 1px solid rgba(185, 11, 190, 0.450);
+    --floating-button-icon: rgb(100, 35, 120);
+    --floating-button-icon-bgcolor: linear-gradient(134deg, rgba(255, 255, 255, 1) 25%, rgb(244, 225, 234) 100%);
+
+    --sidebar-bg: #fff;
+    --sidebar-title: rgb(100, 35, 120);
+    --sidebar-subs: rgb(141, 49, 169);
+    --sidebar-subs-hover: rgb(179, 63, 214);
+}
+
+/* Dark mode palette */
+.dark {
+    --bg-color: #0a0a0a;
+
+    --title-bg-color: #000000;
+    --title-bg-color-hover: rgba(230, 210, 140, 0.12);
+    --title-color: #e6d28c;
+
+    --search-text: #e6d28c;
+    --search-placeholder: rgba(230, 210, 140, 0.45);
+    --search-bg-color: #1a1a1a;
+    --search-border: 1px solid rgba(230, 210, 140, 0.35);
+    --search-border-focus: 2px solid rgba(230, 210, 140, 0.75);
+    --search-background-hover: rgba(230, 210, 140, 0.08);
+
+    --dropdown-bg-color: #000000;
+    --dropdown-bg-color-focus: rgba(230, 210, 140, 0.18);
+
+    --drop-option-border: linear-gradient(90deg,
+            transparent 0%,
+            rgba(230, 210, 140, 0.18) 20%,
+            rgba(230, 210, 140, 0.4) 50%,
+            rgba(230, 210, 140, 0.18) 80%,
+            transparent 100%);
+
+    --drop-option-text: #e6e6e6;
+    --drop-option-bg: #0d0d0d;
+
+    --product-cards-bg-color: #111111;
+    --product-cards-title: #e6d28c;
+    --product-cards-price: #cbb87a;
+
+    --shadow: rgba(230, 210, 140, 0.18);
+
+    --infocard-bgcolor: linear-gradient(130deg,
+            rgba(0, 0, 0, 1) 25%,
+            rgba(28, 24, 10, 1) 65%,
+            rgba(12, 10, 4, 1) 100%);
+
+    --infocard-text: #f3e8b5;
+
+    --floating-button-bgcolor: linear-gradient(134deg,
+            #1c180a 25%,
+            #100d04 100%);
+
+    --floating-button-bgcolor-hover: linear-gradient(134deg,
+            #4b4120 25%,
+            #181305 100%);
+
+    --floating-button-border: 1px solid rgba(230, 210, 140, 0.28);
+    --floating-button-icon: #e6d28c;
+
+    --floating-button-icon-bgcolor: linear-gradient(134deg,
+            rgba(0, 0, 0, 1) 25%,
+            #1b1708 100%);
+
+    --sidebar-bg: #000000;
+    --sidebar-title: #e6d28c;
+    --sidebar-subs: #b8a66a;
+    --sidebar-subs-hover: #f0df9c;
+}

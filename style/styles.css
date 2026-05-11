@@ -1,0 +1,533 @@
+body {
+    background-color: var(--bg-color);
+}
+
+/* Contenedor para el título y la barra de búsqueda */
+.header-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Contenedor hijo para el título */
+.title {
+    width: 85%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--title-bg-color);
+    box-shadow: 4px 4px 8px 3px var(--shadow);
+}
+
+.title h1 {
+    color: var(--title-color);
+    font-family: 'Century Gothic';
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.title h2 {
+    color: var(--title-color);
+    font-family: 'Century Gothic';
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+/* Contenedor hijo para la sección de búsqueda */
+.search {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Barra de búsqueda */
+.search-box {
+    width: 55%;
+    border-radius: 8px;
+    font-size: 18pt;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    outline: none;
+    transition: 0.5s;
+    background-color: var(--search-bg-color);
+    color: var(--search-text);
+    border: var(--search-border);
+}
+
+.search-box::placeholder {
+    color: var(--search-placeholder);
+}
+
+.search-box:hover {
+    translate: 0 -6px;
+    transition: 0.5s;
+    background-color: var(--search-background-hover);
+    background-blend-mode: multiply;
+}
+
+.search-box:focus {
+    border: var(--search-border-focus);
+}
+
+/* Contenedor que contiene la lista de selección de categoría */
+.drop-container {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+/* Otro contenedor, fue usado para arreglar el posicionamiento */
+.drop-down-items {
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón que activa el drop down */
+.drop-down-button {
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--dropdown-bg-color);
+    color: var(--search-text);
+    border: var(--search-border);
+}
+
+.drop-down-button:hover {
+    background-color: var(--search-background-hover);
+    background-blend-mode: multiply;
+}
+
+.drop-down-button:focus {
+    border: var(--search-border-focus);
+}
+
+/* Menú que se despliega al presionar el botón de dropdown */
+.drop-down-menu {
+    width: 95%;
+    display: none;
+    position: absolute;
+    border: var(--search-border);
+    background-color: var(--dropdown-bg-color);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Clase que se asigna al menú desplegable cuando este se activa */
+.active {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    z-index: 250;
+}
+
+/* Estilo de cada una de las opciones para seleccionar */
+.drop-option {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    background-color: var(--drop-option-bg);
+    border-image: var(--drop-option-border);
+    border-image-slice: 1;
+    color: var(--drop-option-text);
+}
+
+.drop-option:hover {
+    background-color: var(--dropdown-bg-color-focus);
+}
+
+
+/* Contenedor para las tarjetas de productos */
+.products-container {
+    display: grid;
+    width: 90%;
+    gap: 20px;
+    justify-content: center;
+    grid-auto-rows: 350px;
+    grid-template-columns: repeat(auto-fit, 250px);
+    margin: 20px;
+}
+
+/* Cada uno de los contenedores de tipo tarjeta de producto */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 9px;
+    transition: 0.5s;
+
+    background-color: var(--product-cards-bg-color);
+    box-shadow: 4px 4px 8px 3px var(--shadow);
+}
+
+.product-card:hover,
+.product-card:focus {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+/* Foto del producto */
+.product-photo {
+    margin-top: 20px;
+    width: 80%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Nombre del producto */
+.product-card h2 {
+    text-align: center;
+    font-size: calc(1rem + 0.3vw);
+    margin: 8px;
+    font-family: 'Century Gothic', sans-serif;
+    color: var(--product-cards-title);
+}
+
+/* Precio del producto */
+.product-card h3 {
+    margin-top: -2px;
+    text-align: center;
+    font-family: 'Times', serif;
+    font-size: 1.1rem;
+    color: var(--product-cards-price)
+}
+
+/* Tarjeta flotante con la información del producto (descripción) */
+.info-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 250px;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+    transition: left 0.03s linear, top 0.03s linear;
+    z-index: 350;
+
+    background: var(--infocard-bgcolor);
+    color: var(--infocard-text);
+    box-shadow: 4px 4px 8px 3px var(--shadow);
+}
+
+.info-card h4 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: calc(1rem + 0.3vw);
+}
+
+.info-card p {
+    margin-top: -15px;
+    font-family: 'Times New Roman', serif;
+    font-size: calc(0.8rem + 0.1vw);
+}
+
+/* Botón del lado izquierdo que activa el menú lateral, técnicamente no debería de llamarse
+   floating menu, si no floating button */
+.floating-button {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+    margin-top: -15px;
+    position: fixed;
+    border-radius: 30px;
+    transition: 0.3s linear;
+    z-index: 150;
+    background: var(--floating-button-bgcolor);
+    border: var(--floating-button-border);
+}
+
+/* Se ve raro, pero todo lo que hace es que el botón brille y tenga énfasis al pasar el cursor sobre él 
+  el :not(.move) significa que no se tomará en cuenta el efecto si es que la clase move está activa */
+.floating-button:hover:not(.Move),
+.floating-button:focus:not(.Move) {
+    transform: scale(1.03);
+    transition: 0.5s linear;
+    background: var(--floating-button-bgcolor-hover);
+}
+
+/* Estilo para la pequeña flechita que aparece en el botón */
+.floating-button svg {
+    display: block;
+    border-radius: 13px;
+    border: var(--floating-button-border);
+    background: var(--floating-button-icon-bgcolor);
+}
+
+.floating-button path {
+    color: var(--floating-button-icon);
+}
+
+/* Menú lateral, está oculto pot defecto (width: 0) */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    padding: 0;
+    transition: 0.5s;
+    background-color: var(--sidebar-bg);
+    z-index: 500;
+    font-family: 'Century Gothic', sans-serif;
+    border-right: var(--search-border);
+}
+
+/* Clase que se activa cuando el menú se quiere mostrar, (width: 400 y display: flex) */
+.sidebarShown {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    transition: 0.5s linear;
+    margin-top: -40px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Transición suave para los elementos dentro del menú */
+.sidebar h1,
+.sidebar p,
+.sidebar a,
+.sidebar .paletteChange,
+.sidebar .socials {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s;
+}
+
+.sidebarShown h1,
+.sidebarShown p,
+.sidebarShown a,
+.sidebarShown .paletteChange,
+.sidebarShown .socials {
+    opacity: 1;
+}
+
+/* Clase que se activa cuando se activa el menú
+   todo lo que hace es mover el botón lateral de modo que no quede oculto y girarlo */
+.Move {
+    translate: 450px;
+    transition: 0.5s linear;
+    z-index: 450;
+    transform: scaleX(-1);
+}
+
+.floating-button.Move:hover {
+    background: var(--floating-button-bgcolor-hover);
+}
+
+/* Título "Menú" */
+.sidebar h1 {
+    font-size: 24pt;
+    color: var(--sidebar-title);
+}
+
+/* Contenedor con botones para cambiar el tema */
+.paletteChange {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-top: 1px solid;
+    border-image: var(--drop-option-border);
+    border-image-slice: 1;
+}
+
+/* Los propios botones que cambian el tema */
+.paletteChange span {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.paletteChange span:hover,
+.paletteChange span:focus {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.mainTheme {
+    background: linear-gradient(134deg, rgba(255, 255, 255, 1) 25%, rgb(155, 155, 234) 100%);
+    border: 1px solid blue;
+}
+
+.pinkTheme {
+    background: linear-gradient(134deg, rgb(244, 231, 243) 25%, rgb(234, 155, 210) 100%);
+    border: 1px solid rgb(255, 0, 191);
+}
+
+.darkTheme {
+    background: linear-gradient(125deg, rgb(255, 204, 0) 10%, rgb(0, 0, 0) 65%);
+    border: 1px solid gold;
+}
+
+.velvetTheme {
+    background: linear-gradient(125deg, rgb(243, 29, 29) 10%, rgb(90, 20, 106) 75%);
+    border: 1px solid purple;
+}
+
+.purpleTheme {
+    background: linear-gradient(125deg, rgb(222, 178, 255) 10%, rgb(55, 1, 121) 100%);
+    border: 1px solid blue;
+}
+
+/* Hyperlinks */
+.sidebar a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18pt;
+    color: var(--sidebar-subs);
+}
+
+.sidebar a:hover {
+    color: var(--sidebar-subs-hover);
+}
+
+/* Títulos ("cambiar tema" y "contáctanos") */
+.sidebar p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18pt;
+    color: var(--sidebar-subs);
+}
+
+/* Contenedor con botones de redes sociales */
+.socials {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-top: 1px solid;
+    border-image: var(--drop-option-border);
+    border-image-slice: 1;
+}
+
+/* Los botones */
+.socials a {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: 25px;
+    transition: 0.5s;
+    display: block;
+    align-items: center;
+}
+
+.socials a:focus,
+.socials a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.fb {
+    background-image: url(../img/fb.webp);
+    background-size: cover;
+}
+
+.ig {
+    background-image: url(../img/ig.webp);
+    background-size: cover;
+}
+
+.tk {
+    background-image: url(../img/tk.webp);
+    background-size: cover;
+}
+
+.about{
+    background-color: white;
+    width: 90%;
+    color: black;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    box-shadow: 4px 4px 8px 3px var(--shadow);
+}
+
+.map-container {
+    width: 90%;
+    height: 400px;
+    border-radius: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+
+/* Media query para cuando se hace pequeña la pantalla */
+@media (max-width: 920px) {
+    .title {
+        width: 90%;
+    }
+
+    .search {
+        width: 85%;
+        flex-direction: column;
+        justify-items: start;
+    }
+
+    .search-box {
+        width: 100%
+    }
+
+    .drop-container {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .floating-button{
+        margin-left: -10px;
+    }
+
+    .sidebarShown {
+        width: 300px;
+    }
+
+    .Move {
+        translate: 360px;
+    }
+}
