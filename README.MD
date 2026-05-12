@@ -88,4 +88,34 @@ Para eliminar un prducto en específico.
     @@@@@@@@@@@@@@@@@@@@@@#=:....:-::.....=#@@@@@@@@
     @@@@@@@@@@@@@@@@@@@@@@@@@@@%#++**#%@@@@@@@@@@@@@
 
+                                                                     
+                                                                           
+                                    .,;ldkOOOkdl:.                         
+                                 .;xKNWWWWWWWWWWWXkc.                      
+                                'xNWWWWWWWWWWWWWWWWWO,                     
+                               .kWWWWWWWWWWWWWWWWWWWWK:                    
+                               lNWWWWWWWWWWWWWWWWWWWWW0'                   
+                              .kWWWWWWWWXNNWWWWWWWWWWWNc                   
+                              ,KWWWWWWWNNWWWWWWWWWWWWWNl                   
+                 ',           .xWWWWWWWWWNKXNWWWWWWWWW0,                   
+                ,KNd.          lNWWWWWWWWNXNWWWWWWWWWXc                    
+                ;XMNd.         ;KWWWWWWWWWWWWWWWWWWWKc                     
+                ,0WWNx.        .ckKWWWWWX0XWWWNNNWNk,                      
+                ,0MNXNk.          .;odkOOxONWWNX0dc'                       
+                ;XMx:OWo                .dXNWWk;;lkx.  .,cl.               
+                oWX:,0Nl                ;0KONXxdKW0, .:ONWx.               
+               cXXc.,KXc..',;:cclooxkxodKOo0WNWWWk. 'kNWWx.                
+             .dNWOooxKNKO0KKKKKKXXXWMMWWXoxWWNWWx. ;0NXWO'                 
+           ,xKK0OKWN00KKKXXXXXXNNKxlloOWklKWOONO. '0Nk0Xc                  
+          :KMW0O0XWMWWN0xlloxOKXXKkxkOXX:cNkcONc  oWOl0Kl:loolc,.          
+        'xXKOkxdddxxkOkxoc'   ...',;xNNo.oWxoNKddkKKdoXN0kkOKNWWXkc.       
+       ,KXo.       .;clodxc'.      :0Xd..xWxxWNOoclx0XXOodkKXNWWWWX;       
+      .xWx.     .lk0kxxxO0XX0xoolcxOc...dX0x0O:.;kXWNNXK0kdl:;,;;:,.       
+      :XNc    ,xKKd'     ..;ldddooc'  .xWOdKKc;kNNNXOo:'.                  
+      dW0'  .oOd:.   .;::coooddooodxkOKX00K0kOXNx,'.                       
+     .OMx.  .,.   .lkK0kl:,',;:clllcc:;..... .;,                           
+     .OWo        ;00l,.                                                    
+     ,KNc       ;Kk.                                                       
+     cNX;       oWo                                              
+
 }
